@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "notebook.defaultFormatter": "ms-python.black-formatter",
+  "editor.fontVariations": false,
+  "ipynbTranslator.zhipuApiKey": "ef0f6a2b167e4981b8c2d1764be0236e.m4m1QwJN8DShpGpv",
+  "python.analysis.extraPaths": [
+    "./libs/checkpoint"
+  ]
+}
