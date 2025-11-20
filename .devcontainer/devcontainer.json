@@ -1,0 +1,40 @@
+{
+  "name": "langgraph",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "runArgs": [
+    "--name=langgraph",
+    "--hostname=langgraph",
+    "--cpus=2",
+    "--memory=8g",
+    "--memory-swap=0g"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.formatting.autopep8Path": "/usr/local/bin/autopep8"
+      },
+      "extensions": [
+        "ms-vscode.makefile-tools",
+        "tadayosi.vscode-makefile-outliner",
+        "marscode.marscode-extension",
+        "bracketpaircolordlw.bracket-pair-color-dlw",
+        "in4margaret.compareit",
+        "vscode-icons-team.vscode-icons",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "postCreateCommand": "echo Welcome",
+  "remoteUser": "devuser",
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/devuser/.ssh,type=bind,consistency=cached"
+  ]
+}

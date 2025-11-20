@@ -1,0 +1,14 @@
+[project]
+name = "langgraph"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Cybwan",email = "baili@flomesh.io"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.1.0",
+    "pandas>=2.3.3",
+    "requests>=2.32.5",
+]
