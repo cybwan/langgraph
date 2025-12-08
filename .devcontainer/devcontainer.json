@@ -1,9 +1,10 @@
 {
   "name": "langgraph",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
+  "image": "cybwan/python:3.12-slim",
+  // "build": {
+  //   "dockerfile": "Dockerfile",
+  //   "context": ".."
+  // },
   "runArgs": [
     "--name=langgraph",
     "--hostname=langgraph",
